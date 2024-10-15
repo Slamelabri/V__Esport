@@ -1,0 +1,241 @@
+/* 1. Hero Section Styling */
+.hero-section {
+    padding: 3em 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    outline: 0;
+    background-color: var(--tertiary-color);
+    position: relative; /* Ensure positioning context for absolute children */
+}
+
+/* 2. Hero Inside Container */
+.hero-inside {
+    z-index: 1;
+    position: relative;
+ /* Ensure container doesn't exceed carousel width */
+    margin: 0 auto; /* Center the container */
+}
+
+/* 3. Hero Prewiper (Assuming it's for styling or spacing) */
+.hero-prewiper {
+    border-radius: 50px;
+    transition: all 0.3s;
+    display: flex;
+    /* Add any additional styles if necessary */
+}
+
+/* 4. Hero Carousel */
+.hero-carousel {
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    max-width: 1222px;
+    width: 100%; /* Ensure it fills the container */
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; 
+}
+
+/* 5. Swiper Wrapper */
+.swiper-wrapper.hero-carousel-wrap {
+    display: flex;
+
+}
+
+
+.swiper-slide.Slide {
+    position: relative; /* For absolutely positioned content */
+    width: 100%; /* Ensure slides take full width */
+    height: 100%; /* Ensure slides take full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Remove redundant properties */
+}
+
+
+.swiper-slide.Slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+/* 8. Carousel Header (Overlay Content) */
+.carousel-header {
+    z-index: 2;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.5rem;
+    color: white; /* Ensure text is visible over images */
+    max-width: 35rem;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+/* 9. Carousel Body */
+.carousel-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* 10. Carousel Header Text */
+.carousel-header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem; /* Adjust as needed */
+}
+
+.carousel-header p {
+    display: -webkit-box;
+    overflow: hidden;
+
+    -webkit-box-orient: vertical;
+    margin-bottom: 1rem;
+    font-size: 1rem; /* Adjust as needed */
+    font-size: 15px;
+
+    font-weight: 400;
+
+}
+
+/* 11. Carousel Button */
+.carousel-button.redd {
+    color: white;
+    padding: 0.75em 1.5em; /* Adjusted padding for consistency */
+    border-radius: 5px;
+    font-weight: bold;
+
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    font-size: 14px;
+    color:var(--secondary-color);
+    background-color:var(--text-color); /* Base color, matches previous suggestions */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-button.redd .button-text {
+    margin-right: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.carousel-button.redd .svg-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.carousel-button.redd .svg-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+}
+
+/* Button Hover Effects */
+.carousel-button.redd:hover {
+    background-color:var(--primary-color);
+    color:var(--text-color);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button.redd:hover .button-text {
+    transform: translateX(5px);
+}
+
+.carousel-button.redd:hover .svg-icon svg {
+    transform: translateX(5px);
+}
+
+
+
+
+/* Swiper Pagination */
+.swiper-pagination {
+    margin-top: 10px;
+    /* Customize pagination if needed */
+}
+
+
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%; /* Height of the gradient */
+    background: linear-gradient(to top, rgba(26, 35, 58, 0.9), rgba(0, 0, 0, 0));
+    pointer-events: none; /* Allow clicks to pass through */
+    border-radius: 0 0 3px 3px; /* Match slide border-radius if necessary */
+}
+
+
+/* Background Overlay */
+.bg-overlay {
+    z-index: 0;
+    background-image: linear-gradient(360deg, var(--tertiary-color), var(--secondary-color));
+    height: auto;
+    position: absolute;
+    inset: 0;
+    opacity: 0.5; /* Adjust opacity as needed */
+}
+/* Responsive Adjustments */
+
+@media (max-width: 1200px) {
+
+    .container{
+        padding:0 3em;
+        max-width: 100%;
+    }
+}
+
+
+
+@media (max-width: 764px) {
+    .carousel-header {
+        bottom: 1.5rem;
+        left: 1.5rem;
+        max-width: 90%;
+        padding: 0.75em;
+    }
+    .hero-section {
+        padding:0;
+    }
+    .container{
+        padding:0;
+        max-width: 100%;
+    }
+    .gradient-overlay{
+        border-radius: 0;
+    }
+    .hero-carousel{
+        height:400px;
+        border-radius: 0;
+    }
+
+    .carousel-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-header p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-button.redd {
+        padding: 0.5em 1em;
+        font-size: 0.9rem;
+    }
+
+    .carousel-button.redd .svg-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}

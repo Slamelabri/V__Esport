@@ -1,0 +1,178 @@
+.match-section {
+    padding: 3em 0;
+    background-color: var(--tertiary-color);
+}
+
+.hero-banner{
+    padding: 15px;
+    overflow: hidden;
+}
+.match-tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+    display: flex;
+    position: relative;
+}
+
+.match-tittle h2{
+    color: var(--text-color);
+    font-size: 2.4rem;
+}
+
+.swiper-button_wrapper {
+    align-items: center;
+    margin-left: auto;
+    display: flex;
+    gap: 0.5rem; /* Adds space between the buttons */
+}
+
+.swiper-button.upcoming-match-prev,
+.swiper-button.upcoming-match-next {
+    border-radius: 0.375rem; /* Softer corners */
+    justify-content: center;
+    align-items: center;
+    width: 3rem; /* Smaller width */
+    height: 3rem; /* Smaller height */
+    display: flex;
+    color: #fff; /* Changes icon color on hover */
+}
+
+.swiper-button.upcoming-match-prev:hover,
+.swiper-button.upcoming-match-next:hover {
+    color: var(--primary-color);
+  
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+.icon-1-5 svg {
+    width: 1rem; /* Smaller icon size */
+    height: 1rem;
+}
+
+
+.icon-1-5 svg {
+    width: 1rem; /* Smaller icon size */
+    height: 1rem;
+}
+
+
+.matchslide{
+
+    position: relative;
+    flex-direction: row;
+    flex: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+    overflow: hidden;
+}
+
+.matchwrapper{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    display: flex;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+.match-card{
+    width: 400px;
+    margin-right: 16px;
+    height: auto;
+    transition: background-color .2s;
+    position: relative;
+    overflow: hidden;
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
+    background-color: var(--secondary-color);
+    color: var(--colors-foundation--foundation-100);
+    border-radius: .5rem;
+    flex-direction: column;
+    flex: none;
+    width: 24.5rem;
+    height: 10.5rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    display: flex;
+    
+}
+
+.match-card a{
+margin-bottom: 0 0 16px;
+}
+.titlte{
+    color: var(--primary-color);
+}
+
+.match-card:hover{
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+
+}
+.card-date{
+    justify-content: space-between;
+    align-items: center;
+    min-height: 28px;
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+    font-size: 13px;
+}
+.card-logo{
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: cover;
+    border-radius: 5px;
+    max-width: 100%;
+
+}
+.cardwraper{
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+.team{
+    grid-column-gap: .125rem;
+    grid-row-gap: .125rem;
+    flex-direction: column;
+    margin-top: auto;
+    display: flex;
+    font-size: 0.8rem;
+}
+
+
+
+.team span{
+    font-size:medium;
+    font-weight: 500;
+    font-family: 'VALORANT', sans-serif;
+}
+
+
+
+
+@media (max-width: 764px) {
+    .match-tittle h2{
+
+        font-size: 1.8rem;
+        padding-left: 1em;
+    }
+    .matchwrapper {
+        padding-left: 5px;
+    }
+    .swiper-button_wrapper {
+        gap: 0;
+    }
+}
+@media (max-width: 572px) {
+    .match-tittle h2{
+    padding-left: 0.2em;
+ 
+    }
+
+}

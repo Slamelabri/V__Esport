@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-color: #ff4656;
+  --secondary-color: #272E48;
+  --tertiary-color: #1A233A;
+  --background-color: #1f2326;
+  --text-color: #fff;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+  text-decoration: none;
+}
+
+  html {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: var(  --text-color); 
+    background-color: var(  --background-color);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden; /* Évite la scrollbar horizontale */
+  }
+
+.img{
+  max-width: 100%;
+  border: 0;
+}
+
+  h1, h2 {
+
+    font-family: 'VALORANT', sans-serif;
+    text-transform: uppercase;
+
+  }
+
+  h3, h4 {
+
+    font-family: 'VALORANT', sans-serif;
+    text-transform: uppercase;
+  }
+
+  h5, h6 {
+
+    font-family: 'VALORANT', sans-serif;
+    text-transform: uppercase;
+  }
+
+.icon-1-5 {
+  object-fit: contain;
+  color: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  max-width: 1.5rem;
+  height: 1.5rem;
+  min-height: 1.5rem;
+  max-height: 1.5rem;
+  display: flex;
+  overflow: hidden;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+}
+.punkPink{
+    background-color: #F54682 ;
+    border: 1px solid #F54682 ;
+}
+.punkPink:hover{
+    background-color: #ffff  ;
+    color: #F54682  ;
+}
+
+.gayBlue{
+    background-color: #016AA4 ;
+    border: 1px solid #016AA4 ;
+}
+.gayBlue:hover{
+    background-color: #ffff  ;
+    color: #016AA4  ;
+}
+
+.shitGreen{
+    background-color: #004347 ;
+    border: 1px solid #004347 ;
+}
+.shitGreen:hover{
+    background-color: #ffff  ;
+    color: #004347 ;
+}
+.Noar{
+    background-color: #000000 ;
+    border: 1px solid #000000 ;
+}
+.Noar:hover{
+    background-color: #ffffff  ;
+    color: #000000  ;
+}
+
+.redd{
+    background-color: #970604 ;
+    border: 1px solid #970604 ;
+}
+.redd:hover{
+    background-color: #ffffff  ;
+    color: #970604;  
+}
+.purpleSkunk{
+    background-color: #921EA4 ;
+    border: 1px solid #921EA4 ;
+}
+.purpleSkunk:hover{
+    background-color: #ffffff  ;
+    color: #921EA4;  
+}
+
+.Orange{
+    background-color: #E28935 ;
+    border: 1px solid #E28935 ;
+}
+.Orange:hover{
+    background-color: #ffffff  ;
+    color: #E28935;  
+}
+
+
+/* Full-width container */
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+/* Fixed-width container with breakpoints */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
